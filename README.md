@@ -102,7 +102,7 @@ scenedetect
 
 ## License
 
-Read [MIT License](https://github.com/gianbo01/clip_creator/blob/main/LICENSE)
+Read [MIT License](https://github.com/gianbo01/youtube-video-scene-splitter/blob/main/LICENSE)
 
 ## Contributing
 
