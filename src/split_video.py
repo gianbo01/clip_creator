@@ -4,8 +4,6 @@ from dotenv import load_dotenv
 import os
 
 def split_video(input_file, output_folder):
-
-    load_dotenv(dotenv_path="config.env")
     TRESHOLD = float(os.getenv("TRESHOLD"))
     LUMA_ONLY = bool(os.getenv("LUMA_ONLY"))
 

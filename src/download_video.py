@@ -2,10 +2,10 @@ import yt_dlp
 from dotenv import load_dotenv
 import os
 
-def dl_video(url, pathVideo):
-    load_dotenv()
-    FFMPEG_PATH = os.getenv("FFMPEG_PATH", "")
 
+def dl_video(url, pathVideo):
+    FFMPEG_PATH = os.getenv("FFMPEG_PATH")
+    
     try:
         # Opzioni di configurazione
         ydl_opts = {

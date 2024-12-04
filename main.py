@@ -1,9 +1,17 @@
-from download_video import dl_video
-from crop_video_to_9_16 import crop_video_to_9_16
-from split_video import split_video
+from src.download_video import dl_video
+from src.crop_video_to_9_16 import crop_video_to_9_16
+from src.split_video import split_video
 import sys
 import os
 import shutil
+from dotenv import load_dotenv
+
+# Construct the path to the .env file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ENV_PATH = os.path.join(BASE_DIR, 'config', 'config.env')
+
+# Load the environment variables
+load_dotenv(dotenv_path=ENV_PATH)
 
 
 if __name__ == "__main__":
@@ -37,5 +45,5 @@ if __name__ == "__main__":
     # Delete tmp folder
     shutil.rmtree("tmp")
 
-    if os.path.exists("_pychache_"):
-        shutil.rmtree("_pychache_")
+    if os.path.exists("./src/__pycache__"):
+        shutil.rmtree("src/__pycache__")
