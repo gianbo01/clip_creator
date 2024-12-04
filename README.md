@@ -102,7 +102,7 @@ scenedetect
 
 ## License
 
-[Choose an appropriate license, e.g., MIT]
+Read [MIT License](https://github.com/gianbo01/clip_creator/blob/main/LICENSE)
 
 ## Contributing
 
